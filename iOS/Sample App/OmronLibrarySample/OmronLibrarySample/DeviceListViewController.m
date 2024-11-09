@@ -344,6 +344,39 @@
 }
 
 - (void)showPromptForPartnerKey : (BOOL) isCancelButtonStatus {
+    
+    NSString * const ACOmronAPIKeyNorthAmerica = @"614A3E02-42FA-40AB-A49E-649B3A239B36";
+    NSString * const ACOmronAPIKeyEurope = @"A71BCE3A-7563-4409-8D9D-8F2430E7777D";
+    NSString * const ACOmronAPIKeyAsia = @"9DA8CCE1-4077-4BEB-9977-3722EBF49AA5";
+    
+    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Select the Region of the Device" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *northAmericaAction = [UIAlertAction actionWithTitle:@"North America" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [[NSUserDefaults standardUserDefaults] setValue:ACOmronAPIKeyNorthAmerica forKey:LibraryKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self reloadConfiguration];
+    }];
+    UIAlertAction *europeAction = [UIAlertAction actionWithTitle:@"Europe" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [[NSUserDefaults standardUserDefaults] setValue:ACOmronAPIKeyEurope forKey:LibraryKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self reloadConfiguration];
+    }];
+    UIAlertAction *asiaAction = [UIAlertAction actionWithTitle:@"Asia" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [[NSUserDefaults standardUserDefaults] setValue:ACOmronAPIKeyAsia forKey:LibraryKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self reloadConfiguration];
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    
+    [actionSheet addAction:northAmericaAction];
+    [actionSheet addAction:europeAction];
+    [actionSheet addAction:asiaAction];
+    [actionSheet addAction:cancelAction];
+    
+    [self presentViewController:actionSheet animated:YES completion:nil];
+    
+    
+    /*
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     NSString *details = [NSString stringWithFormat:@"Sample App Version : %@\nLibrary Version : %@\n\nTap ⓘ to configure later", version, [[OmronPeripheralManager sharedManager] libVersion]];
     
@@ -412,6 +445,8 @@
         [self.alert addAction:okButton];
         [self presentViewController:self.alert animated:YES completion:nil];
     }
+    
+    */
     
 }
 
