@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -80,7 +80,7 @@
 		17BBA1562AC1138400B50845 /* DevicePairingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevicePairingViewController.m; sourceTree = "<group>"; };
 		189DE3572A95A79400B9995F /* OmronLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmronLogger.h; sourceTree = "<group>"; };
 		18EC83A82ADFF00800653095 /* OmronLibrarySample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = OmronLibrarySample.xcodeproj; sourceTree = "<group>"; };
-		18EC83AB2ADFF03F00653095 /* OmronConnectivityLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OmronConnectivityLibrary.xcframework; sourceTree = "<group>"; };
+		18EC83AB2ADFF03F00653095 /* OmronConnectivityLibrary.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:Y352ZX64B3:OMRON HEALTHCARE Co., Ltd."; lastKnownFileType = wrapper.xcframework; path = OmronConnectivityLibrary.xcframework; sourceTree = "<group>"; };
 		4F2B727E29B9A2BA00297D95 /* WheezeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WheezeViewController.h; sourceTree = "<group>"; };
 		4F2B727F29B9A2BA00297D95 /* WheezeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheezeViewController.m; sourceTree = "<group>"; };
 		4F2B728129B9A2E500297D95 /* WheezeReadingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WheezeReadingsViewController.h; sourceTree = "<group>"; };
@@ -416,7 +416,6 @@
 				TargetAttributes = {
 					83F492701CFE2F55003B6AAA = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = L5S87M4SWL;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -607,7 +606,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L5S87M4SWL;
+				DEVELOPMENT_TEAM = 86YX7T745R;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -631,7 +630,7 @@
 				MARKETING_VERSION = 6.2.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ohq.global.connectivitylibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alivecor.omronconnect.sample.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -763,7 +762,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L5S87M4SWL;
+				DEVELOPMENT_TEAM = 86YX7T745R;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -788,7 +787,7 @@
 				MARKETING_VERSION = 6.2.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ohq.global.connectivitylibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alivecor.omronconnect.sample.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -804,7 +803,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L5S87M4SWL;
+				DEVELOPMENT_TEAM = 86YX7T745R;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -824,7 +823,7 @@
 				MARKETING_VERSION = 6.2.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ohq.global.connectivitylibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alivecor.omronconnect.sample.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
