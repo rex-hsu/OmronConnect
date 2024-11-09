@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8A7CBE63-41A9-4C83-859B-57E7CCEA724C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66AB035C-7C12-43E8-BC9D-ED74B9F7374D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Framework/OmronConnectivityLibrary/OmronConnectivityLibrary/OmronConnectivityHelpers/OmronPeripheralManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1948"
+            endingLineNumber = "1948"
+            landmarkName = "-defaultNotificationSetting"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46C77163-31D3-4416-8CEF-22B3CC741AF9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Framework/OmronConnectivityLibrary/OmronConnectivityLibrary/OmronConnectivityHelpers/OmronPeripheralManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3255"
+            endingLineNumber = "3255"
+            landmarkName = "-deviceSettingsForVitalDataCompletedWithSettings:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D431AB70-2235-4FB4-97A8-B198E5D9CBCA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Framework/OmronConnectivityLibrary/OmronConnectivityLibrary/OmronConnectivityHelpers/OmronPeripheralManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3061"
+            endingLineNumber = "3061"
+            landmarkName = "-setEquipmentId:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "026C1812-BA48-47DF-B7A5-D00C53C4928D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Framework/OmronConnectivityLibrary/OmronConnectivityLibrary/OmronConnectivityHelpers/OmronPeripheralManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3033"
+            endingLineNumber = "3033"
+            landmarkName = "-setParameter"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7265880D-0B32-45E5-B5B4-170D111369E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Framework/OmronConnectivityLibrary/OmronConnectivityLibrary/OmronConnectivityHelpers/OmronPeripheralManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1851"
+            endingLineNumber = "1851"
+            landmarkName = "-onConnectStateChange:newState:event:errorStatus:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C2D5DF2-A7F8-4F99-ACC9-617D1D57A1B1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Framework/OmronConnectivityLibrary/OmronConnectivityLibrary/OmronConnectivityHelpers/OmronPeripheralManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2815"
+            endingLineNumber = "2815"
+            landmarkName = "-endScanTimer:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4C1A19D-0996-494B-8267-87A102E3394A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Framework/OmronConnectivityLibrary/OmronConnectivityLibrary/OmronConnectivityHelpers/OmronPeripheralManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2843"
+            endingLineNumber = "2843"
+            landmarkName = "-createEquipment:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8AACC65F-B505-4AC4-A1FA-8622E7347993"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Framework/OmronConnectivityLibrary/OmronConnectivityLibrary/OmronConnectivityHelpers/OmronPeripheralManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2945"
+            endingLineNumber = "2945"
+            landmarkName = "-setDeviceParameter"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BAC88E46-0E8A-48A8-8470-C32C5769E19B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Framework/OmronConnectivityLibrary/OmronConnectivityLibrary/OmronConnectivityHelpers/OmronPeripheralManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1309"
+            endingLineNumber = "1309"
+            landmarkName = "-startDataTransferFromPeripheral:withUsers:withCompletionBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

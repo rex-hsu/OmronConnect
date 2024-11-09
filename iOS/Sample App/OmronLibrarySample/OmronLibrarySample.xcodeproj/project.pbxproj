@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17030BCF2AB95B6900B58FB0 /* SupportDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17030BCE2AB95B6900B58FB0 /* SupportDevicesViewController.m */; };
+		17030BD42AB98E7400B58FB0 /* PersonalInfoSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17030BD32AB98E7400B58FB0 /* PersonalInfoSettingsViewController.m */; };
+		17BBA1572AC1138400B50845 /* DevicePairingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BBA1562AC1138400B50845 /* DevicePairingViewController.m */; };
+		18EC83AC2ADFF04000653095 /* OmronConnectivityLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EC83AB2ADFF03F00653095 /* OmronConnectivityLibrary.xcframework */; };
+		18EC83AD2ADFF04000653095 /* OmronConnectivityLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18EC83AB2ADFF03F00653095 /* OmronConnectivityLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F2B728029B9A2BA00297D95 /* WheezeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B727F29B9A2BA00297D95 /* WheezeViewController.m */; };
+		4F2B728329B9A2E500297D95 /* WheezeReadingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B728229B9A2E500297D95 /* WheezeReadingsViewController.m */; };
+		500EED63226105D80073A00E /* WeightReadingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500EED62226105D80073A00E /* WeightReadingsViewController.m */; };
+		501B29CC225C899800039052 /* BodyCompositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B29CB225C899800039052 /* BodyCompositionViewController.m */; };
+		832EC05D1D1C753E0050371B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F493141CFF3D1B003B6AAA /* CoreBluetooth.framework */; };
+		832EC0601D1C77BE0050371B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F4931B1CFF5AEF003B6AAA /* CoreData.framework */; };
+		832EC0611D1C77C40050371B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833076201D1B74D8001FA140 /* QuartzCore.framework */; };
+		833A7B471F040E1400A883C4 /* VitalOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A7B461F040E1400A883C4 /* VitalOptionsTableViewController.m */; };
+		833A7B4A1F0411F000A883C4 /* RecordsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A7B491F0411F000A883C4 /* RecordsListTableViewController.m */; };
+		833A7B4D1F04192E00A883C4 /* ActivityTypesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A7B4C1F04192E00A883C4 /* ActivityTypesTableViewController.m */; };
+		833A7B501F04328B00A883C4 /* ActivityListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833A7B4F1F04328B00A883C4 /* ActivityListTableViewController.m */; };
+		8377E30E20C83F3600974EC2 /* SleepListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8377E30D20C83F3600974EC2 /* SleepListTableViewController.m */; };
+		8377E31120C8600400974EC2 /* SleepMovementListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8377E31020C8600400974EC2 /* SleepMovementListTableViewController.m */; };
+		83784E83225BF35A00665D4C /* OmronConnectivityLibraryAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83784E82225BF35A00665D4C /* OmronConnectivityLibraryAssets.bundle */; };
+		838718C11F055B360056250B /* ReminderListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838718C01F055B360056250B /* ReminderListTableViewController.m */; };
+		838718C41F055B930056250B /* ReminderAddTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838718C31F055B930056250B /* ReminderAddTableViewController.m */; };
+		83F492771CFE2F55003B6AAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F492761CFE2F55003B6AAA /* main.m */; };
+		83F4927A1CFE2F55003B6AAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F492791CFE2F55003B6AAA /* AppDelegate.m */; };
+		83F492801CFE2F55003B6AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F4927E1CFE2F55003B6AAA /* Main.storyboard */; };
+		83F492821CFE2F55003B6AAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F492811CFE2F55003B6AAA /* Images.xcassets */; };
+		83F492851CFE2F55003B6AAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83F492831CFE2F55003B6AAA /* LaunchScreen.xib */; };
+		83F492911CFE2F55003B6AAA /* OmronLibrarySampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F492901CFE2F55003B6AAA /* OmronLibrarySampleTests.m */; };
+		83F492E71CFE322C003B6AAA /* DeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F492E61CFE322C003B6AAA /* DeviceListViewController.m */; };
+		83F492EF1CFE7752003B6AAA /* BPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F492EE1CFE7752003B6AAA /* BPViewController.m */; };
+		83F4931A1CFF5A32003B6AAA /* BPDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83F493181CFF5A32003B6AAA /* BPDataModel.xcdatamodeld */; };
+		83F4931F1CFF5E36003B6AAA /* BPReadingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F4931E1CFF5E36003B6AAA /* BPReadingsViewController.m */; };
+		83F532E71EF99D3500DE8773 /* PairedDeviceListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F532E61EF99D3500DE8773 /* PairedDeviceListTableViewController.m */; };
+		A5C61DCA2912317600FC5311 /* PulseOxymeterReadingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C61DC72912317600FC5311 /* PulseOxymeterReadingsViewController.m */; };
+		A5C61DCB2912317600FC5311 /* PulseOxymeterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C61DC82912317600FC5311 /* PulseOxymeterViewController.m */; };
+		B10178F12653705C002EEAF9 /* TemperatureRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10178F02653705C002EEAF9 /* TemperatureRecordingViewController.m */; };
+		B145896A264CF43500733D3E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1458969264CF43500733D3E /* AVFoundation.framework */; };
+		B1ACCED2250DB2E90058D711 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ACCED1250DB2E90058D711 /* BaseViewController.m */; };
+		B1ACCED6250EEF110058D711 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ACCED5250EEF110058D711 /* BaseTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83F4928B1CFE2F55003B6AAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83F492691CFE2F55003B6AAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83F492701CFE2F55003B6AAA;
+			remoteInfo = OmronLibrarySample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18EC83AE2ADFF04000653095 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18EC83AD2ADFF04000653095 /* OmronConnectivityLibrary.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		17030BCE2AB95B6900B58FB0 /* SupportDevicesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupportDevicesViewController.m; sourceTree = "<group>"; };
+		17030BD22AB95BD200B58FB0 /* SupportDevicesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SupportDevicesViewController.h; sourceTree = "<group>"; };
+		17030BD32AB98E7400B58FB0 /* PersonalInfoSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalInfoSettingsViewController.m; sourceTree = "<group>"; };
+		17030BD52AB98EBA00B58FB0 /* PersonalInfoSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalInfoSettingsViewController.h; sourceTree = "<group>"; };
+		17BBA1532AC1138400B50845 /* DevicePairingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevicePairingViewController.h; sourceTree = "<group>"; };
+		17BBA1562AC1138400B50845 /* DevicePairingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevicePairingViewController.m; sourceTree = "<group>"; };
+		189DE3572A95A79400B9995F /* OmronLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmronLogger.h; sourceTree = "<group>"; };
+		18EC83A82ADFF00800653095 /* OmronLibrarySample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = OmronLibrarySample.xcodeproj; sourceTree = "<group>"; };
+		18EC83AB2ADFF03F00653095 /* OmronConnectivityLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OmronConnectivityLibrary.xcframework; sourceTree = "<group>"; };
+		4F2B727E29B9A2BA00297D95 /* WheezeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WheezeViewController.h; sourceTree = "<group>"; };
+		4F2B727F29B9A2BA00297D95 /* WheezeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheezeViewController.m; sourceTree = "<group>"; };
+		4F2B728129B9A2E500297D95 /* WheezeReadingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WheezeReadingsViewController.h; sourceTree = "<group>"; };
+		4F2B728229B9A2E500297D95 /* WheezeReadingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheezeReadingsViewController.m; sourceTree = "<group>"; };
+		500EED61226105D80073A00E /* WeightReadingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeightReadingsViewController.h; sourceTree = "<group>"; };
+		500EED62226105D80073A00E /* WeightReadingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeightReadingsViewController.m; sourceTree = "<group>"; };
+		501B29CA225C899800039052 /* BodyCompositionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BodyCompositionViewController.h; sourceTree = "<group>"; };
+		501B29CB225C899800039052 /* BodyCompositionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BodyCompositionViewController.m; sourceTree = "<group>"; };
+		833076201D1B74D8001FA140 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		833A7B451F040E1400A883C4 /* VitalOptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VitalOptionsTableViewController.h; sourceTree = "<group>"; };
+		833A7B461F040E1400A883C4 /* VitalOptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VitalOptionsTableViewController.m; sourceTree = "<group>"; };
+		833A7B481F0411F000A883C4 /* RecordsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsListTableViewController.h; sourceTree = "<group>"; };
+		833A7B491F0411F000A883C4 /* RecordsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordsListTableViewController.m; sourceTree = "<group>"; };
+		833A7B4B1F04192E00A883C4 /* ActivityTypesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTypesTableViewController.h; sourceTree = "<group>"; };
+		833A7B4C1F04192E00A883C4 /* ActivityTypesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTypesTableViewController.m; sourceTree = "<group>"; };
+		833A7B4E1F04328B00A883C4 /* ActivityListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityListTableViewController.h; sourceTree = "<group>"; };
+		833A7B4F1F04328B00A883C4 /* ActivityListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityListTableViewController.m; sourceTree = "<group>"; };
+		8377E30C20C83F3600974EC2 /* SleepListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepListTableViewController.h; sourceTree = "<group>"; };
+		8377E30D20C83F3600974EC2 /* SleepListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepListTableViewController.m; sourceTree = "<group>"; };
+		8377E30F20C8600400974EC2 /* SleepMovementListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepMovementListTableViewController.h; sourceTree = "<group>"; };
+		8377E31020C8600400974EC2 /* SleepMovementListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepMovementListTableViewController.m; sourceTree = "<group>"; };
+		83784E82225BF35A00665D4C /* OmronConnectivityLibraryAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OmronConnectivityLibraryAssets.bundle; sourceTree = "<group>"; };
+		838718BF1F055B360056250B /* ReminderListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderListTableViewController.h; sourceTree = "<group>"; };
+		838718C01F055B360056250B /* ReminderListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderListTableViewController.m; sourceTree = "<group>"; };
+		838718C21F055B930056250B /* ReminderAddTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderAddTableViewController.h; sourceTree = "<group>"; };
+		838718C31F055B930056250B /* ReminderAddTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderAddTableViewController.m; sourceTree = "<group>"; };
+		83F492711CFE2F55003B6AAA /* OmronLibrarySample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmronLibrarySample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F492751CFE2F55003B6AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F492761CFE2F55003B6AAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83F492781CFE2F55003B6AAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83F492791CFE2F55003B6AAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83F4927F1CFE2F55003B6AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83F492811CFE2F55003B6AAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		83F492841CFE2F55003B6AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		83F4928A1CFE2F55003B6AAA /* OmronLibrarySampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmronLibrarySampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F4928F1CFE2F55003B6AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F492901CFE2F55003B6AAA /* OmronLibrarySampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OmronLibrarySampleTests.m; sourceTree = "<group>"; };
+		83F492E51CFE322C003B6AAA /* DeviceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListViewController.h; sourceTree = "<group>"; };
+		83F492E61CFE322C003B6AAA /* DeviceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListViewController.m; sourceTree = "<group>"; };
+		83F492ED1CFE7752003B6AAA /* BPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPViewController.h; sourceTree = "<group>"; };
+		83F492EE1CFE7752003B6AAA /* BPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPViewController.m; sourceTree = "<group>"; };
+		83F492F31CFE91B8003B6AAA /* OmronLibrarySample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OmronLibrarySample-Prefix.pch"; sourceTree = "<group>"; };
+		83F493141CFF3D1B003B6AAA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		83F493191CFF5A32003B6AAA /* BPDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BPDataModel.xcdatamodel; sourceTree = "<group>"; };
+		83F4931B1CFF5AEF003B6AAA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		83F4931D1CFF5E36003B6AAA /* BPReadingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPReadingsViewController.h; sourceTree = "<group>"; };
+		83F4931E1CFF5E36003B6AAA /* BPReadingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPReadingsViewController.m; sourceTree = "<group>"; };
+		83F532E51EF99D3500DE8773 /* PairedDeviceListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairedDeviceListTableViewController.h; sourceTree = "<group>"; };
+		83F532E61EF99D3500DE8773 /* PairedDeviceListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairedDeviceListTableViewController.m; sourceTree = "<group>"; };
+		A5C61DC62912317600FC5311 /* PulseOxymeterReadingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulseOxymeterReadingsViewController.h; sourceTree = "<group>"; };
+		A5C61DC72912317600FC5311 /* PulseOxymeterReadingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulseOxymeterReadingsViewController.m; sourceTree = "<group>"; };
+		A5C61DC82912317600FC5311 /* PulseOxymeterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulseOxymeterViewController.m; sourceTree = "<group>"; };
+		A5C61DC92912317600FC5311 /* PulseOxymeterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulseOxymeterViewController.h; sourceTree = "<group>"; };
+		B10178EF2653705C002EEAF9 /* TemperatureRecordingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemperatureRecordingViewController.h; sourceTree = "<group>"; };
+		B10178F02653705C002EEAF9 /* TemperatureRecordingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemperatureRecordingViewController.m; sourceTree = "<group>"; };
+		B1458969264CF43500733D3E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B1ACCED0250DB2E90058D711 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		B1ACCED1250DB2E90058D711 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		B1ACCED4250EEF110058D711 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		B1ACCED5250EEF110058D711 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83F4926E1CFE2F55003B6AAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B145896A264CF43500733D3E /* AVFoundation.framework in Frameworks */,
+				832EC0611D1C77C40050371B /* QuartzCore.framework in Frameworks */,
+				832EC0601D1C77BE0050371B /* CoreData.framework in Frameworks */,
+				832EC05D1D1C753E0050371B /* CoreBluetooth.framework in Frameworks */,
+				18EC83AC2ADFF04000653095 /* OmronConnectivityLibrary.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F492871CFE2F55003B6AAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18EC83A92ADFF00800653095 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F2B727D29B9A1D800297D95 /* Wheeze */ = {
+			isa = PBXGroup;
+			children = (
+				4F2B727E29B9A2BA00297D95 /* WheezeViewController.h */,
+				4F2B727F29B9A2BA00297D95 /* WheezeViewController.m */,
+				4F2B728129B9A2E500297D95 /* WheezeReadingsViewController.h */,
+				4F2B728229B9A2E500297D95 /* WheezeReadingsViewController.m */,
+			);
+			name = Wheeze;
+			sourceTree = "<group>";
+		};
+		501B29C9225C893E00039052 /* Body Composition */ = {
+			isa = PBXGroup;
+			children = (
+				501B29CA225C899800039052 /* BodyCompositionViewController.h */,
+				501B29CB225C899800039052 /* BodyCompositionViewController.m */,
+				500EED61226105D80073A00E /* WeightReadingsViewController.h */,
+				500EED62226105D80073A00E /* WeightReadingsViewController.m */,
+			);
+			name = "Body Composition";
+			sourceTree = "<group>";
+		};
+		8365A2AE20AE23360043B5C4 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				838718BF1F055B360056250B /* ReminderListTableViewController.h */,
+				838718C01F055B360056250B /* ReminderListTableViewController.m */,
+				838718C21F055B930056250B /* ReminderAddTableViewController.h */,
+				838718C31F055B930056250B /* ReminderAddTableViewController.m */,
+			);
+			name = Reminder;
+			sourceTree = "<group>";
+		};
+		83CABCFE20AB6B390088C38F /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				8365A2AE20AE23360043B5C4 /* Reminder */,
+				83DB285A20BDF35F001DA132 /* VitalDataActivity */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		83DB285A20BDF35F001DA132 /* VitalDataActivity */ = {
+			isa = PBXGroup;
+			children = (
+				833A7B451F040E1400A883C4 /* VitalOptionsTableViewController.h */,
+				833A7B461F040E1400A883C4 /* VitalOptionsTableViewController.m */,
+				833A7B4B1F04192E00A883C4 /* ActivityTypesTableViewController.h */,
+				833A7B4C1F04192E00A883C4 /* ActivityTypesTableViewController.m */,
+				833A7B4E1F04328B00A883C4 /* ActivityListTableViewController.h */,
+				833A7B4F1F04328B00A883C4 /* ActivityListTableViewController.m */,
+				8377E30C20C83F3600974EC2 /* SleepListTableViewController.h */,
+				8377E30D20C83F3600974EC2 /* SleepListTableViewController.m */,
+				8377E30F20C8600400974EC2 /* SleepMovementListTableViewController.h */,
+				8377E31020C8600400974EC2 /* SleepMovementListTableViewController.m */,
+				833A7B481F0411F000A883C4 /* RecordsListTableViewController.h */,
+				833A7B491F0411F000A883C4 /* RecordsListTableViewController.m */,
+			);
+			name = VitalDataActivity;
+			sourceTree = "<group>";
+		};
+		83F492681CFE2F55003B6AAA = {
+			isa = PBXGroup;
+			children = (
+				83F493231CFF7828003B6AAA /* Frameworks */,
+				83F492731CFE2F55003B6AAA /* OmronLibrarySample */,
+				83F4928D1CFE2F55003B6AAA /* OmronLibrarySampleTests */,
+				83F492721CFE2F55003B6AAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83F492721CFE2F55003B6AAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83F492711CFE2F55003B6AAA /* OmronLibrarySample.app */,
+				83F4928A1CFE2F55003B6AAA /* OmronLibrarySampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83F492731CFE2F55003B6AAA /* OmronLibrarySample */ = {
+			isa = PBXGroup;
+			children = (
+				83F493221CFF7671003B6AAA /* ViewControllers */,
+				83F492741CFE2F55003B6AAA /* Supporting Files */,
+				83F492781CFE2F55003B6AAA /* AppDelegate.h */,
+				83F492791CFE2F55003B6AAA /* AppDelegate.m */,
+			);
+			path = OmronLibrarySample;
+			sourceTree = "<group>";
+		};
+		83F492741CFE2F55003B6AAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83784E82225BF35A00665D4C /* OmronConnectivityLibraryAssets.bundle */,
+				83F492811CFE2F55003B6AAA /* Images.xcassets */,
+				83F4927E1CFE2F55003B6AAA /* Main.storyboard */,
+				83F492831CFE2F55003B6AAA /* LaunchScreen.xib */,
+				83F492751CFE2F55003B6AAA /* Info.plist */,
+				83F492761CFE2F55003B6AAA /* main.m */,
+				83F492F31CFE91B8003B6AAA /* OmronLibrarySample-Prefix.pch */,
+				83F493181CFF5A32003B6AAA /* BPDataModel.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83F4928D1CFE2F55003B6AAA /* OmronLibrarySampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				83F492901CFE2F55003B6AAA /* OmronLibrarySampleTests.m */,
+				83F4928E1CFE2F55003B6AAA /* Supporting Files */,
+			);
+			path = OmronLibrarySampleTests;
+			sourceTree = "<group>";
+		};
+		83F4928E1CFE2F55003B6AAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83F4928F1CFE2F55003B6AAA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83F493221CFF7671003B6AAA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F2B727D29B9A1D800297D95 /* Wheeze */,
+				A5C61DC52912315D00FC5311 /* Pulse Oxymeter */,
+				B10178EE2653701B002EEAF9 /* Temperature */,
+				B1ACCED3250DC5940058D711 /* Blood Pressure */,
+				501B29C9225C893E00039052 /* Body Composition */,
+				83CABCFE20AB6B390088C38F /* Activity */,
+				189DE3572A95A79400B9995F /* OmronLogger.h */,
+				17030BCE2AB95B6900B58FB0 /* SupportDevicesViewController.m */,
+				17030BD22AB95BD200B58FB0 /* SupportDevicesViewController.h */,
+				17030BD32AB98E7400B58FB0 /* PersonalInfoSettingsViewController.m */,
+				17030BD52AB98EBA00B58FB0 /* PersonalInfoSettingsViewController.h */,
+				17BBA1532AC1138400B50845 /* DevicePairingViewController.h */,
+				17BBA1562AC1138400B50845 /* DevicePairingViewController.m */,
+				83F492E51CFE322C003B6AAA /* DeviceListViewController.h */,
+				83F492E61CFE322C003B6AAA /* DeviceListViewController.m */,
+				83F532E51EF99D3500DE8773 /* PairedDeviceListTableViewController.h */,
+				83F532E61EF99D3500DE8773 /* PairedDeviceListTableViewController.m */,
+				B1ACCED0250DB2E90058D711 /* BaseViewController.h */,
+				B1ACCED1250DB2E90058D711 /* BaseViewController.m */,
+				B1ACCED4250EEF110058D711 /* BaseTableViewController.h */,
+				B1ACCED5250EEF110058D711 /* BaseTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		83F493231CFF7828003B6AAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18EC83AB2ADFF03F00653095 /* OmronConnectivityLibrary.xcframework */,
+				18EC83A82ADFF00800653095 /* OmronLibrarySample.xcodeproj */,
+				833076201D1B74D8001FA140 /* QuartzCore.framework */,
+				83F4931B1CFF5AEF003B6AAA /* CoreData.framework */,
+				83F493141CFF3D1B003B6AAA /* CoreBluetooth.framework */,
+				B1458969264CF43500733D3E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5C61DC52912315D00FC5311 /* Pulse Oxymeter */ = {
+			isa = PBXGroup;
+			children = (
+				A5C61DC62912317600FC5311 /* PulseOxymeterReadingsViewController.h */,
+				A5C61DC72912317600FC5311 /* PulseOxymeterReadingsViewController.m */,
+				A5C61DC92912317600FC5311 /* PulseOxymeterViewController.h */,
+				A5C61DC82912317600FC5311 /* PulseOxymeterViewController.m */,
+			);
+			name = "Pulse Oxymeter";
+			sourceTree = "<group>";
+		};
+		B10178EE2653701B002EEAF9 /* Temperature */ = {
+			isa = PBXGroup;
+			children = (
+				B10178EF2653705C002EEAF9 /* TemperatureRecordingViewController.h */,
+				B10178F02653705C002EEAF9 /* TemperatureRecordingViewController.m */,
+			);
+			path = Temperature;
+			sourceTree = "<group>";
+		};
+		B1ACCED3250DC5940058D711 /* Blood Pressure */ = {
+			isa = PBXGroup;
+			children = (
+				83F492ED1CFE7752003B6AAA /* BPViewController.h */,
+				83F492EE1CFE7752003B6AAA /* BPViewController.m */,
+				83F4931D1CFF5E36003B6AAA /* BPReadingsViewController.h */,
+				83F4931E1CFF5E36003B6AAA /* BPReadingsViewController.m */,
+			);
+			name = "Blood Pressure";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83F492701CFE2F55003B6AAA /* OmronLibrarySample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F492941CFE2F55003B6AAA /* Build configuration list for PBXNativeTarget "OmronLibrarySample" */;
+			buildPhases = (
+				83F4926D1CFE2F55003B6AAA /* Sources */,
+				83F4926E1CFE2F55003B6AAA /* Frameworks */,
+				83F4926F1CFE2F55003B6AAA /* Resources */,
+				18EC83AE2ADFF04000653095 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OmronLibrarySample;
+			productName = OmronLibrarySample;
+			productReference = 83F492711CFE2F55003B6AAA /* OmronLibrarySample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83F492891CFE2F55003B6AAA /* OmronLibrarySampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F492971CFE2F55003B6AAA /* Build configuration list for PBXNativeTarget "OmronLibrarySampleTests" */;
+			buildPhases = (
+				83F492861CFE2F55003B6AAA /* Sources */,
+				83F492871CFE2F55003B6AAA /* Frameworks */,
+				83F492881CFE2F55003B6AAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83F4928C1CFE2F55003B6AAA /* PBXTargetDependency */,
+			);
+			name = OmronLibrarySampleTests;
+			productName = OmronLibrarySampleTests;
+			productReference = 83F4928A1CFE2F55003B6AAA /* OmronLibrarySampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83F492691CFE2F55003B6AAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Omron HealthCare Inc";
+				TargetAttributes = {
+					83F492701CFE2F55003B6AAA = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = L5S87M4SWL;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					83F492891CFE2F55003B6AAA = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = UJ8LU8NH7Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83F492701CFE2F55003B6AAA;
+					};
+				};
+			};
+			buildConfigurationList = 83F4926C1CFE2F55003B6AAA /* Build configuration list for PBXProject "OmronLibrarySample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83F492681CFE2F55003B6AAA;
+			productRefGroup = 83F492721CFE2F55003B6AAA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18EC83A92ADFF00800653095 /* Products */;
+					ProjectRef = 18EC83A82ADFF00800653095 /* OmronLibrarySample.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				83F492701CFE2F55003B6AAA /* OmronLibrarySample */,
+				83F492891CFE2F55003B6AAA /* OmronLibrarySampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83F4926F1CFE2F55003B6AAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F492801CFE2F55003B6AAA /* Main.storyboard in Resources */,
+				83F492851CFE2F55003B6AAA /* LaunchScreen.xib in Resources */,
+				83F492821CFE2F55003B6AAA /* Images.xcassets in Resources */,
+				83784E83225BF35A00665D4C /* OmronConnectivityLibraryAssets.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F492881CFE2F55003B6AAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83F4926D1CFE2F55003B6AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F532E71EF99D3500DE8773 /* PairedDeviceListTableViewController.m in Sources */,
+				17030BD42AB98E7400B58FB0 /* PersonalInfoSettingsViewController.m in Sources */,
+				4F2B728029B9A2BA00297D95 /* WheezeViewController.m in Sources */,
+				B10178F12653705C002EEAF9 /* TemperatureRecordingViewController.m in Sources */,
+				838718C41F055B930056250B /* ReminderAddTableViewController.m in Sources */,
+				83F4931A1CFF5A32003B6AAA /* BPDataModel.xcdatamodeld in Sources */,
+				83F492EF1CFE7752003B6AAA /* BPViewController.m in Sources */,
+				833A7B4A1F0411F000A883C4 /* RecordsListTableViewController.m in Sources */,
+				17BBA1572AC1138400B50845 /* DevicePairingViewController.m in Sources */,
+				501B29CC225C899800039052 /* BodyCompositionViewController.m in Sources */,
+				A5C61DCB2912317600FC5311 /* PulseOxymeterViewController.m in Sources */,
+				4F2B728329B9A2E500297D95 /* WheezeReadingsViewController.m in Sources */,
+				8377E30E20C83F3600974EC2 /* SleepListTableViewController.m in Sources */,
+				83F492E71CFE322C003B6AAA /* DeviceListViewController.m in Sources */,
+				838718C11F055B360056250B /* ReminderListTableViewController.m in Sources */,
+				A5C61DCA2912317600FC5311 /* PulseOxymeterReadingsViewController.m in Sources */,
+				500EED63226105D80073A00E /* WeightReadingsViewController.m in Sources */,
+				83F4927A1CFE2F55003B6AAA /* AppDelegate.m in Sources */,
+				833A7B501F04328B00A883C4 /* ActivityListTableViewController.m in Sources */,
+				17030BCF2AB95B6900B58FB0 /* SupportDevicesViewController.m in Sources */,
+				833A7B4D1F04192E00A883C4 /* ActivityTypesTableViewController.m in Sources */,
+				B1ACCED2250DB2E90058D711 /* BaseViewController.m in Sources */,
+				833A7B471F040E1400A883C4 /* VitalOptionsTableViewController.m in Sources */,
+				83F4931F1CFF5E36003B6AAA /* BPReadingsViewController.m in Sources */,
+				B1ACCED6250EEF110058D711 /* BaseTableViewController.m in Sources */,
+				83F492771CFE2F55003B6AAA /* main.m in Sources */,
+				8377E31120C8600400974EC2 /* SleepMovementListTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F492861CFE2F55003B6AAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F492911CFE2F55003B6AAA /* OmronLibrarySampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83F4928C1CFE2F55003B6AAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83F492701CFE2F55003B6AAA /* OmronLibrarySample */;
+			targetProxy = 83F4928B1CFE2F55003B6AAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83F4927E1CFE2F55003B6AAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83F4927F1CFE2F55003B6AAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83F492831CFE2F55003B6AAA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83F492841CFE2F55003B6AAA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		172F89302AD69E4200358B85 /* devtest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Praveen Rajan (83A728CQCF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Praveen Rajan (83A728CQCF)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"OMRON_DEVTEST=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "ad852457-ef35-472d-a955-547ee0c0f907";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = devtest;
+		};
+		172F89312AD69E4200358B85 /* devtest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5S87M4SWL;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OmronLibrarySample",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OmronLibrarySample/OmronLibrarySample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OmronLibrarySample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 6.2.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ohq.global.connectivitylibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = devtest;
+		};
+		172F89322AD69E4200358B85 /* devtest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Praveen Rajan (83A728CQCF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UJ8LU8NH7Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OmronLibrarySampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmronLibrarySample.app/OmronLibrarySample";
+			};
+			name = devtest;
+		};
+		83F492921CFE2F55003B6AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Praveen Rajan (83A728CQCF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Praveen Rajan (83A728CQCF)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "ad852457-ef35-472d-a955-547ee0c0f907";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83F492931CFE2F55003B6AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Praveen Rajan (83A728CQCF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Praveen Rajan (83A728CQCF)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "ad852457-ef35-472d-a955-547ee0c0f907";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83F492951CFE2F55003B6AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5S87M4SWL;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OmronLibrarySample",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OmronLibrarySample/OmronLibrarySample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OmronLibrarySample/Info.plist;
+				INFOPLIST_PREPROCESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 6.2.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ohq.global.connectivitylibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		83F492961CFE2F55003B6AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5S87M4SWL;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OmronLibrarySample",
+				);
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OmronLibrarySample/OmronLibrarySample-Prefix.pch";
+				INFOPLIST_FILE = OmronLibrarySample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 6.2.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.ohq.global.connectivitylibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		83F492981CFE2F55003B6AAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Praveen Rajan (83A728CQCF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UJ8LU8NH7Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OmronLibrarySampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmronLibrarySample.app/OmronLibrarySample";
+			};
+			name = Debug;
+		};
+		83F492991CFE2F55003B6AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Praveen Rajan (83A728CQCF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UJ8LU8NH7Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OmronLibrarySampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmronLibrarySample.app/OmronLibrarySample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83F4926C1CFE2F55003B6AAA /* Build configuration list for PBXProject "OmronLibrarySample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F492921CFE2F55003B6AAA /* Debug */,
+				172F89302AD69E4200358B85 /* devtest */,
+				83F492931CFE2F55003B6AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83F492941CFE2F55003B6AAA /* Build configuration list for PBXNativeTarget "OmronLibrarySample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F492951CFE2F55003B6AAA /* Debug */,
+				172F89312AD69E4200358B85 /* devtest */,
+				83F492961CFE2F55003B6AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83F492971CFE2F55003B6AAA /* Build configuration list for PBXNativeTarget "OmronLibrarySampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F492981CFE2F55003B6AAA /* Debug */,
+				172F89322AD69E4200358B85 /* devtest */,
+				83F492991CFE2F55003B6AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		83F493181CFF5A32003B6AAA /* BPDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				83F493191CFF5A32003B6AAA /* BPDataModel.xcdatamodel */,
+			);
+			currentVersion = 83F493191CFF5A32003B6AAA /* BPDataModel.xcdatamodel */;
+			path = BPDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 83F492691CFE2F55003B6AAA /* Project object */;
+}
