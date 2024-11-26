@@ -6,15 +6,15 @@
 	<dict>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/BatchDL_AP_001_000_00000.zip</key>
 		<data>
-		CqYl0jnvAKzv+V5fnCDSYI77kCw=
+		EaZvBkg7zzEzV0zrNVB8+2jkVlg=
 		</data>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/BatchDL_EU_001_000_00000.zip</key>
 		<data>
-		8rXO/zhvBM20LklRzW0mWxLSjog=
+		4DSi7CvfG53EA0zmBRHL4BziLhg=
 		</data>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/BatchDL_US_001_000_00000.zip</key>
 		<data>
-		SnGttNNAXBcuiMbII+22cf4snGw=
+		ch3mnuR7mHrZVEWwyQ7+YQHnh+Y=
 		</data>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/Headers/OmronConnectivityLibrary.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/Info.plist</key>
 		<data>
-		5Bc/tfr8GKJ50YSS+nDbvOz9sqE=
+		YG/3bFkw29VPTdqKKssJdNi/9do=
 		</data>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/OmronConnectivityLibrary</key>
 		<data>
-		a1ez/4LYk8P3DFcLbI6lv78BKMM=
+		YDgNCkGiUBmpD3btMpjzCVoNpGo=
 		</data>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -58,15 +58,15 @@
 		</data>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/BatchDL_AP_001_000_00000.zip</key>
 		<data>
-		CqYl0jnvAKzv+V5fnCDSYI77kCw=
+		EaZvBkg7zzEzV0zrNVB8+2jkVlg=
 		</data>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/BatchDL_EU_001_000_00000.zip</key>
 		<data>
-		8rXO/zhvBM20LklRzW0mWxLSjog=
+		4DSi7CvfG53EA0zmBRHL4BziLhg=
 		</data>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/BatchDL_US_001_000_00000.zip</key>
 		<data>
-		SnGttNNAXBcuiMbII+22cf4snGw=
+		ch3mnuR7mHrZVEWwyQ7+YQHnh+Y=
 		</data>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/Headers/OmronConnectivityLibrary.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/Info.plist</key>
 		<data>
-		kgCfuq3YGhJ/ZbbhnXHeDB2INcA=
+		6OvvU8cgMjp3JU7Fd+xYefwsxZI=
 		</data>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/Modules/module.modulemap</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/OmronConnectivityLibrary</key>
 		<data>
-		7AR5twy0/8Q5ZVBS/nV1V8+eL3E=
+		tNVI00k6JOSxHziSFihqvl5Q6Y0=
 		</data>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/_CodeSignature/CodeResources</key>
 		<data>
-		3bR4vqMMqbEfnSnXCuxWWEBjd6M=
+		kKok7knqFvHXCgBQNG1JddSQiwE=
 		</data>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/version.txt</key>
 		<data>
@@ -115,33 +115,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CqYl0jnvAKzv+V5fnCDSYI77kCw=
+			EaZvBkg7zzEzV0zrNVB8+2jkVlg=
 			</data>
 			<key>hash2</key>
 			<data>
-			EL5toRx9610GAK3JgeEwkjxe5mkfvGzSp945/SXibMc=
+			a5bp+dJfUskLAsbFzbULVD1SVSCjTAW6o6Mi0pS4TDg=
 			</data>
 		</dict>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/BatchDL_EU_001_000_00000.zip</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8rXO/zhvBM20LklRzW0mWxLSjog=
+			4DSi7CvfG53EA0zmBRHL4BziLhg=
 			</data>
 			<key>hash2</key>
 			<data>
-			bTtjmZkLGE0XKlny/4Kc2gv5kzae8l5POxZ5wW8h0TQ=
+			WzctK2XxY4trXoiHXMcwM5k3Y667dkuHQ4VMUP0dGbk=
 			</data>
 		</dict>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/BatchDL_US_001_000_00000.zip</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SnGttNNAXBcuiMbII+22cf4snGw=
+			ch3mnuR7mHrZVEWwyQ7+YQHnh+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			0cv2o1TUtSbiEdjfax/QGw+1CHfGxv2EdbcNSe5U4jI=
+			pTud/5XqfU2EJTIAyTZR3d/HXD2MRa5+td46k7r+cBE=
 			</data>
 		</dict>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/Headers/OmronConnectivityLibrary.h</key>
@@ -203,11 +203,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5Bc/tfr8GKJ50YSS+nDbvOz9sqE=
+			YG/3bFkw29VPTdqKKssJdNi/9do=
 			</data>
 			<key>hash2</key>
 			<data>
-			HYn3ud81R8lUzgoyA6OL+TRLjG/A0D7WHTMsMwxm3Wc=
+			w4rJdv5Oxp0hZkNUk3UDfopiL4ivK2v8f7cqCEkm8/k=
 			</data>
 		</dict>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/Modules/module.modulemap</key>
@@ -225,11 +225,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a1ez/4LYk8P3DFcLbI6lv78BKMM=
+			YDgNCkGiUBmpD3btMpjzCVoNpGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			v2lU7HRflZopFzBJ9/sMRSxM1+G8LpZ/OfEdA/Y94IU=
+			tUGYjkkL1iokOWFBUS5m20HPvSZ8eIZg3Oo7f32vO/E=
 			</data>
 		</dict>
 		<key>ios-arm64/OmronConnectivityLibrary.framework/PrivacyInfo.xcprivacy</key>
@@ -258,33 +258,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CqYl0jnvAKzv+V5fnCDSYI77kCw=
+			EaZvBkg7zzEzV0zrNVB8+2jkVlg=
 			</data>
 			<key>hash2</key>
 			<data>
-			EL5toRx9610GAK3JgeEwkjxe5mkfvGzSp945/SXibMc=
+			a5bp+dJfUskLAsbFzbULVD1SVSCjTAW6o6Mi0pS4TDg=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/BatchDL_EU_001_000_00000.zip</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8rXO/zhvBM20LklRzW0mWxLSjog=
+			4DSi7CvfG53EA0zmBRHL4BziLhg=
 			</data>
 			<key>hash2</key>
 			<data>
-			bTtjmZkLGE0XKlny/4Kc2gv5kzae8l5POxZ5wW8h0TQ=
+			WzctK2XxY4trXoiHXMcwM5k3Y667dkuHQ4VMUP0dGbk=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/BatchDL_US_001_000_00000.zip</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SnGttNNAXBcuiMbII+22cf4snGw=
+			ch3mnuR7mHrZVEWwyQ7+YQHnh+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			0cv2o1TUtSbiEdjfax/QGw+1CHfGxv2EdbcNSe5U4jI=
+			pTud/5XqfU2EJTIAyTZR3d/HXD2MRa5+td46k7r+cBE=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/Headers/OmronConnectivityLibrary.h</key>
@@ -346,11 +346,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kgCfuq3YGhJ/ZbbhnXHeDB2INcA=
+			6OvvU8cgMjp3JU7Fd+xYefwsxZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			F/saEaM/NBSZIoVrgo0kgUBc1Ac4aVynwCe0nNdtC04=
+			BfoI9BiP5A/P/9QAyw5Sowq3BYXFlUyIALx8lMTwi+Y=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/Modules/module.modulemap</key>
@@ -368,22 +368,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7AR5twy0/8Q5ZVBS/nV1V8+eL3E=
+			tNVI00k6JOSxHziSFihqvl5Q6Y0=
 			</data>
 			<key>hash2</key>
 			<data>
-			hoSzBrd2aMv+Yb7SpyEp5xbSsuLJeliKFhtIyuPuNNY=
+			ODoQoQ68SK0/+mjPwq/oFpOEHNFEinfQu8CNXwwNxFE=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3bR4vqMMqbEfnSnXCuxWWEBjd6M=
+			kKok7knqFvHXCgBQNG1JddSQiwE=
 			</data>
 			<key>hash2</key>
 			<data>
-			w8mSolGqpTYZj1A5GrTorQvLoTU6PACMBjp5SIk0kfc=
+			CNfiLfq+TxWU7XvKVeyTlPeOYYAPXfHThRq2Lsewo7E=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/OmronConnectivityLibrary.framework/version.txt</key>

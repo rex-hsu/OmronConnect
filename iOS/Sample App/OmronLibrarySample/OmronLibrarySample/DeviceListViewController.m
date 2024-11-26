@@ -434,6 +434,7 @@
             self.addNewDeviceButton.backgroundColor = [self getCustomColor];
         }];
         [self.alert addAction:cancelButton];
+        [self.alert addAction:cancelButton];
         
         [self.alert addAction:okButton];
         [self presentViewController:self.alert animated:YES completion:^{
@@ -445,9 +446,7 @@
         [self.alert addAction:okButton];
         [self presentViewController:self.alert animated:YES completion:nil];
     }
-    
     */
-    
 }
 
 - (void)reloadConfiguration {
