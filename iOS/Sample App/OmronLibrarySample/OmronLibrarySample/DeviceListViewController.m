@@ -349,7 +349,8 @@
     NSString * const ACOmronAPIKeyEurope = @"A71BCE3A-7563-4409-8D9D-8F2430E7777D";
     NSString * const ACOmronAPIKeyAsia = @"9DA8CCE1-4077-4BEB-9977-3722EBF49AA5";
     
-    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Select the Region of the Device" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    NSString *message = [NSString stringWithFormat:@"OMRON SDK version: %@",  [OmronPeripheralManager.sharedManager libVersion]];
+    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Select the Region of the Device" message:message preferredStyle:UIAlertControllerStyleActionSheet];
     
     UIAlertAction *northAmericaAction = [UIAlertAction actionWithTitle:@"North America" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [[NSUserDefaults standardUserDefaults] setValue:ACOmronAPIKeyNorthAmerica forKey:LibraryKey];
