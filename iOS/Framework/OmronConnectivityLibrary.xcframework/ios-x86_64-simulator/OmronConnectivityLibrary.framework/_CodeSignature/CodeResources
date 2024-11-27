@@ -6,39 +6,39 @@
 	<dict>
 		<key>BatchDL_AP_001_000_00000.zip</key>
 		<data>
-		CqYl0jnvAKzv+V5fnCDSYI77kCw=
+		EaZvBkg7zzEzV0zrNVB8+2jkVlg=
 		</data>
 		<key>BatchDL_EU_001_000_00000.zip</key>
 		<data>
-		8rXO/zhvBM20LklRzW0mWxLSjog=
+		4DSi7CvfG53EA0zmBRHL4BziLhg=
 		</data>
 		<key>BatchDL_US_001_000_00000.zip</key>
 		<data>
-		SnGttNNAXBcuiMbII+22cf4snGw=
+		ch3mnuR7mHrZVEWwyQ7+YQHnh+Y=
 		</data>
 		<key>Headers/OmronConnectivityLibrary.h</key>
 		<data>
-		gMtkwjAdUoJjm+ftHUkG/WLZo5U=
+		RP5SeedBixbfCDVqFbBsNWN8Utk=
 		</data>
 		<key>Headers/OmronDefines.h</key>
 		<data>
-		ana2tAYPhap5Aj8LwvOVvuYqfQg=
+		4NsvmkE/Q1f0IcNFcOfx/1W1fvM=
 		</data>
 		<key>Headers/OmronPeripheral.h</key>
 		<data>
-		fovStq5PVs/AmA32d/hU+6swygk=
+		uhIvqVE5KzcMUu1fc1fFeExs+WU=
 		</data>
 		<key>Headers/OmronPeripheralManager.h</key>
 		<data>
-		9vai/U5LYI0sWipELPc3zac2VbA=
+		ZzRyzzI9cK9YnUydxg8e+BrOJAU=
 		</data>
 		<key>Headers/OmronPeripheralManagerConfig.h</key>
 		<data>
-		AD+bDtOTrzyADOQY95pcHUYO/Ho=
+		xZMRmNi53iB7BBJXUj53vrXu5T0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kgCfuq3YGhJ/ZbbhnXHeDB2INcA=
+		6OvvU8cgMjp3JU7Fd+xYefwsxZI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>version.txt</key>
 		<data>
-		B2FO4EqcrE725HhFiJqByy34q0I=
+		lcu5hIPLszoaU81pjYaFHAcEvAA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,56 +55,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EL5toRx9610GAK3JgeEwkjxe5mkfvGzSp945/SXibMc=
+			a5bp+dJfUskLAsbFzbULVD1SVSCjTAW6o6Mi0pS4TDg=
 			</data>
 		</dict>
 		<key>BatchDL_EU_001_000_00000.zip</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bTtjmZkLGE0XKlny/4Kc2gv5kzae8l5POxZ5wW8h0TQ=
+			WzctK2XxY4trXoiHXMcwM5k3Y667dkuHQ4VMUP0dGbk=
 			</data>
 		</dict>
 		<key>BatchDL_US_001_000_00000.zip</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0cv2o1TUtSbiEdjfax/QGw+1CHfGxv2EdbcNSe5U4jI=
+			pTud/5XqfU2EJTIAyTZR3d/HXD2MRa5+td46k7r+cBE=
 			</data>
 		</dict>
 		<key>Headers/OmronConnectivityLibrary.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCvIyW3g00dozDNfzzA0bcaMt5lTCEgnP/5xe4rBQAI=
+			bkH+WLnMBhu1pr9+gwKIoI/Vn3bwJLRECPRoPrws+y8=
 			</data>
 		</dict>
 		<key>Headers/OmronDefines.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jqDscWRwXi1DsjoeQ2UTLphUGTa07ZZYTr8DsaR9ftc=
+			vLiTiJLqizmMzbNPDCz7TEDTyaIqkcSzVy2F4PgLwMo=
 			</data>
 		</dict>
 		<key>Headers/OmronPeripheral.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WFXFwCeO5zivn4/Kes0hP2NE6fWmQSCakXWml9K5Cpk=
+			Pz2+4i07GhkL3EnyC8j91IxLPyb9256oURDJ2Dpp4T4=
 			</data>
 		</dict>
 		<key>Headers/OmronPeripheralManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXb124a7rXEPir4Jw82Jrof4KGfC26KQbH9Y/XLdw8o=
+			nRMcK6ar242bbBOXl/UQmdku1pYUh8A+gaDHcCBT/7U=
 			</data>
 		</dict>
 		<key>Headers/OmronPeripheralManagerConfig.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Je0bGzhE/wfJ5UQDYm+itRqiqLFnRGofqynmoMkapc=
+			iYJRpfaHxcYcvj2o7Y5c3KtWOq2a+9QTzqr/PM+XPhM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xdKtw1xzcUVIeyaoE8if5/DNHpwRDjYNLaIUtdpwbdA=
+			M+YO2prrlrpFIOEvW76ZoXBjt4bGNdSafwZnJ0HWAu4=
 			</data>
 		</dict>
 	</dict>
