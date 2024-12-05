@@ -217,11 +217,16 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         OmronPeripheral *peripheral = [scannedPeripheral objectAtIndex:indexPath.row];
         if([self.protocolSelect isEqualToString:BLEDeviceKey]){
-            if([self existenceDevicePairingDataCheck:[peripheral valueForKey:LocalNameKey] deviceInfo:peripheral]){
+            NSNumber *userNumber = @(-1);
+            if (selectedUsers.count > 0) {
+                userNumber = selectedUsers[0];
+            }
+            if([self existenceDevicePairingDataCheck:[peripheral valueForKey:LocalNameKey] userNumber:[userNumber integerValue] deviceInfo:peripheral]){
                 // Stop Scanning for devices if scanning
                 [[OmronPeripheralManager sharedManager] stopScanPeripherals];
                 [self showDialogtWithMessage:@"This device is already registered." title:@"Info" withAction:@"deviceRegistered" localPeripheral:nil];
-            }else{
+            }else
+            {
                 self.navigationItem.hidesBackButton = YES;
                 self.tableView.hidden = YES;
                 self.connectingToDeviceView.hidden = NO;
@@ -244,8 +249,8 @@
             
             
         }else{
-            
-            if([self existenceDevicePairingDataCheck:OMRONThermometerMC280B deviceInfo:peripheral]){
+            NSAssert(false, @"userNumber is a dummy, please update it");
+            if([self existenceDevicePairingDataCheck:OMRONThermometerMC280B userNumber:0 deviceInfo:peripheral]){
                 [self showDialogtWithMessage:@"This device is already registered." title:@"Info" withAction:@"deviceRegistered" localPeripheral:nil];
             }else{
                 [self showDialogtWithMessage : @"Omron device paired successfully!" title:@"Device paired" withAction : @"pairedSuccessfully" localPeripheral:peripheral];
@@ -390,18 +395,19 @@
                                           inManagedObjectContext:context];
     //Where to set keys and values
     NSString *localName = [peripheral valueForKey:LocalNameKey];
+    NSNumber *userNumber = @(-1);
+    if (selectedUsers.count > 0) {
+        userNumber = selectedUsers[0];
+    }
     NSString *uuid = [NSString stringWithFormat:@"%@",[peripheral valueForKey:@"UUID"]];
     
     if([self.protocolSelect isEqualToString:BLEDeviceKey]){
         
-        if(![self existenceDevicePairingDataCheck:localName deviceInfo:peripheral]){
+        if(![self existenceDevicePairingDataCheck:localName userNumber:[userNumber integerValue] deviceInfo:peripheral]){
             [pairingDeviceInfo setValue:[NSString stringWithFormat:@"%@", localName ] forKey:LocalNameKey];
             [pairingDeviceInfo setValue:[NSString stringWithFormat:@"%@", uuid] forKey:UuidKey];
             // Check if selectedUsers is not empty
             if (selectedUsers.count > 0) {
-                // Get value from selectedUsers
-                NSNumber *userNumber = selectedUsers[0];
-                
                 // Set value to pairingDeviceInfo
                 [pairingDeviceInfo setValue:userNumber forKey:UserNumberKey];
             } else {
@@ -426,7 +432,7 @@
         
     }else{
         
-        if(![self existenceDevicePairingDataCheck:OMRONThermometerMC280B deviceInfo:peripheral]){
+        if(![self existenceDevicePairingDataCheck:OMRONThermometerMC280B userNumber:[userNumber integerValue] deviceInfo:peripheral]){
             localName = OMRONThermometerMC280B;
             uuid =@" ";
             [pairingDeviceInfo setValue:[NSString stringWithFormat:@"%@", localName] forKey:LocalNameKey];
@@ -604,7 +610,8 @@
     }
 }
 
-- (Boolean)existenceDevicePairingDataCheck : (NSString *)localName deviceInfo : (OmronPeripheral *)deviceInfo{
+- (Boolean)existenceDevicePairingDataCheck :(NSString *)localName userNumber:(NSInteger)userNumber deviceInfo:(OmronPeripheral *)deviceInfo{
+
     AppDelegate *appDel = [AppDelegate sharedAppDelegate];
     NSManagedObjectContext *managedContext = [appDel managedObjectContext];
     NSEntityDescription *entity = [NSEntityDescription
@@ -616,7 +623,8 @@
     
     NSArray *fetchedObjects = [managedContext executeFetchRequest:fetchRequest error:&error];
     for (NSManagedObject *object in fetchedObjects) {
-        if ([[[object valueForKey:LocalNameKey] lowercaseString] isEqualToString:[localName lowercaseString]]) {
+        if ([[[object valueForKey:LocalNameKey] lowercaseString] isEqualToString:[localName lowercaseString]] &&
+            [(NSNumber *)[object valueForKey:UserNumberKey] integerValue] == userNumber) {
             // Strings are matched case-insensitively
             return YES;
         }
