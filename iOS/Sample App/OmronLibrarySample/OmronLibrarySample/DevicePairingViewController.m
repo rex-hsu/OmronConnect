@@ -541,7 +541,7 @@
             }
             DeviceListViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"DeviceListViewController"];
             [self.navigationController pushViewController:controller animated:YES];
-        }else if([userAction isEqualToString:@"deviceRegistered"]){
+        } else if([userAction isEqualToString:@"deviceRegistered"]){
             if([self.protocolSelect isEqualToString:BLEDeviceKey]){
                 [self startScanning];
             }
@@ -632,7 +632,7 @@
     
     return false;
 }
-- (void) startScanning{
+- (void)startScanning{
     isScan = YES;
     // Start Scanning of Omron Peripherals
     [[OmronPeripheralManager sharedManager] startScanPeripheralsWithCompletionBlock:^(NSArray *retrievedPeripherals, NSError *error) {
@@ -843,8 +843,13 @@
     // Add OK button
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //Write here the process when the OK button is tapped
-        [selectedUsers addObject:@(userNumber)];
-        [self connectPeripheralWithWait:peripheral];
+        if([self existenceDevicePairingDataCheck:[peripheral valueForKey:LocalNameKey] userNumber:userNumber deviceInfo:peripheral]){
+            [[OmronPeripheralManager sharedManager] stopScanPeripherals];
+            [self showDialogtWithMessage:@"This device is already registered." title:@"Info" withAction:@"error" localPeripheral:nil];
+        } else {
+            [selectedUsers addObject:@(userNumber)];
+            [self connectPeripheralWithWait:peripheral];
+        }
     }];
     [alertController addAction:okAction];
     // show dialog
