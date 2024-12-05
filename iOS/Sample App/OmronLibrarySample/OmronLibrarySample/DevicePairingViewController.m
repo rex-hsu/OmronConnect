@@ -604,7 +604,7 @@
     }
 }
 
-- (Boolean) existenceDevicePairingDataCheck : (NSString *)localName deviceInfo : (OmronPeripheral *)deviceInfo{
+- (Boolean)existenceDevicePairingDataCheck : (NSString *)localName deviceInfo : (OmronPeripheral *)deviceInfo{
     AppDelegate *appDel = [AppDelegate sharedAppDelegate];
     NSManagedObjectContext *managedContext = [appDel managedObjectContext];
     NSEntityDescription *entity = [NSEntityDescription

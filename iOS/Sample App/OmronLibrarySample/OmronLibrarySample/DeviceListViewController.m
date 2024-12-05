@@ -33,6 +33,7 @@
     NSString *protocolSelect;
 }
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *infoBtn;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *addNewDeviceButton;
 @property (strong, nonatomic) UIButton *btnBLEDevice;
@@ -44,6 +45,10 @@
 @end
 
 @implementation DeviceListViewController
+
+NSString * const ACOmronAPIKeyNorthAmerica = @"614A3E02-42FA-40AB-A49E-649B3A239B36";
+NSString * const ACOmronAPIKeyEurope = @"A71BCE3A-7563-4409-8D9D-8F2430E7777D";
+NSString * const ACOmronAPIKeyAsia = @"9DA8CCE1-4077-4BEB-9977-3722EBF49AA5";
 
 - (void)viewDidLoad {
     
@@ -71,10 +76,9 @@
         isLoading = NO;
     }
     [self.addNewDeviceButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    
-    
-
 }
+
+
 // Start Omron Peripheral Manager
 - (void)startOmronPeripheralManagerWithHistoricRead:(BOOL)isHistoric withPairing:(BOOL)pairing {
     
@@ -345,9 +349,7 @@
 
 - (void)showPromptForPartnerKey : (BOOL) isCancelButtonStatus {
     
-    NSString * const ACOmronAPIKeyNorthAmerica = @"614A3E02-42FA-40AB-A49E-649B3A239B36";
-    NSString * const ACOmronAPIKeyEurope = @"A71BCE3A-7563-4409-8D9D-8F2430E7777D";
-    NSString * const ACOmronAPIKeyAsia = @"9DA8CCE1-4077-4BEB-9977-3722EBF49AA5";
+
     
     NSString *message = [NSString stringWithFormat:@"OMRON SDK version: %@",  [OmronPeripheralManager.sharedManager libVersion]];
     UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Select the Region of the Device" message:message preferredStyle:UIAlertControllerStyleActionSheet];
@@ -467,7 +469,24 @@
                                                      name:OMRONBLEConfigDeviceAvailabilityNotification
                                                    object:nil];
     }
+    
+    [self updateInfoBtn];
 }
+
+
+- (void)updateInfoBtn {
+    NSString *title = @"N/A";
+    NSString *selectedAPIKey = (NSString *)[[NSUserDefaults standardUserDefaults] valueForKey:LibraryKey];
+    if ([selectedAPIKey isEqualToString:ACOmronAPIKeyEurope]) {
+        title = @"EU";;
+    } else if ([selectedAPIKey isEqualToString:ACOmronAPIKeyAsia]) {
+        title = @"Asia";
+    } else if ([selectedAPIKey isEqualToString:ACOmronAPIKeyNorthAmerica]) {
+        title = @"N. America";
+    }
+    self.infoBtn.title = title;
+}
+
 - (void)showInfoAlertWithScrollView : (NSMutableArray *)deviceList {
     // create custom view
     UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 270, 350)];
