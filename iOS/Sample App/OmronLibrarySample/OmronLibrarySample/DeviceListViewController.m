@@ -348,9 +348,7 @@ NSString * const ACOmronAPIKeyAsia = @"9DA8CCE1-4077-4BEB-9977-3722EBF49AA5";
 }
 
 - (void)showPromptForPartnerKey : (BOOL) isCancelButtonStatus {
-    
 
-    
     NSString *message = [NSString stringWithFormat:@"OMRON SDK version: %@",  [OmronPeripheralManager.sharedManager libVersion]];
     UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:@"Select the Region of the Device" message:message preferredStyle:UIAlertControllerStyleActionSheet];
     
@@ -375,6 +373,13 @@ NSString * const ACOmronAPIKeyAsia = @"9DA8CCE1-4077-4BEB-9977-3722EBF49AA5";
     [actionSheet addAction:europeAction];
     [actionSheet addAction:asiaAction];
     [actionSheet addAction:cancelAction];
+    
+    UIPopoverPresentationController *popoverController = actionSheet.popoverPresentationController;
+    if (popoverController) {
+        popoverController.sourceView = self.view;
+        CGSize size = self.view.bounds.size;
+        popoverController.sourceRect = CGRectMake(size.width/2, size.height/2, 1, 1);
+    }
     
     [self presentViewController:actionSheet animated:YES completion:nil];
     
@@ -687,6 +692,13 @@ NSString * const ACOmronAPIKeyAsia = @"9DA8CCE1-4077-4BEB-9977-3722EBF49AA5";
     [alertController addAction:deviceDataHistoryMenuItem];
     [alertController addAction:supportDeviceMenuItem];
     [alertController addAction:cancelAction];
+    
+    UIPopoverPresentationController *popoverController = alertController.popoverPresentationController;
+    if (popoverController) {
+        popoverController.sourceView = self.view;
+        CGSize size = self.view.bounds.size;
+        popoverController.sourceRect = CGRectMake(size.width/2, size.height/2, 1, 1);
+    }
     // Show alert controller
     [self presentViewController:alertController animated:YES completion:nil];
 }
