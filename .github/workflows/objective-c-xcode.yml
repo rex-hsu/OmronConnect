@@ -1,0 +1,31 @@
+name: Build OmronLibrarySample
+
+on:
+  push:
+    branches:
+      - rex/github-action-setup
+  pull_request:
+    branches:
+      - rex/github-action-setup
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set Xcode version
+      - name: Set Xcode version
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app
+
+      # Step 3: Build the project
+      - name: Build OmronLibrarySample
+        run: |
+          xcodebuild clean build \
+            -project OmronLibrarySample.xcodeproj \
+            -scheme OmronLibrarySample \
+            -configuration Daily \
+            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
