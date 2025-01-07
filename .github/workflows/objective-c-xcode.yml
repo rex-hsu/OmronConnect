@@ -58,6 +58,11 @@ jobs:
         run: |
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/OmronConnect_Library_sample.mobileprovision
+          
+      - name: Verify Provisioning Profile
+        run: |
+          ls ~/Library/MobileDevice/Provisioning\ Profiles
+          security find-identity -p codesigning -v
 
 
       #Step 6: Build and sign the app
