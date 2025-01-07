@@ -11,6 +11,7 @@ on:
 jobs:
   build-and-sign:
     runs-on: macos-latest
+    environment: Daily
 
     steps:
       # Step 1: Checkout the repository
