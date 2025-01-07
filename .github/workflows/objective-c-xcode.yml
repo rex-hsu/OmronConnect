@@ -58,8 +58,8 @@ jobs:
       # Step 5: Install provisioning profile
       - name: Install provisioning profile
         run: |
-          mkdir -p ~/Library/MobileDevice/Provisioning\\ Profiles
-          cp Profile.mobileprovision ~/Library/MobileDevice/Provisioning\\ Profiles/
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp Profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
 
       # Step 6: Build and sign the app
       - name: Build and Sign
