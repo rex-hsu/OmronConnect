@@ -41,18 +41,18 @@ jobs:
           security default-keychain -s build.keychain
           security set-keychain-settings
 
-          security list-keychain
-          security find-identity -p codesigning
-          ls -l Certificate.p12
+          # security list-keychain
+          # security find-identity -p codesigning
+          # ls -l Certificate.p12
 
           # Import the .p12 file
           security import Certificate.p12 -k build.keychain -P ${{ secrets.P12_PASSWORD }} -A
           
-      - name: Debug keychain
-        run: |
-          security list-keychain
-          security find-identity -p codesigning
-          ls -l Certificate.p12
+      # - name: Debug keychain
+      #   run: |
+      #     security list-keychain
+      #     security find-identity -p codesigning
+      #     ls -l Certificate.p12
 
 
       # Step 5: Install provisioning profile
@@ -61,10 +61,10 @@ jobs:
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp Profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
 
-      - name: Debug Provisioning Profiles
-        run: |
-          security find-identity -p codesigning -v
-          ls ~/Library/MobileDevice/Provisioning\ Profiles
+      # - name: Debug Provisioning Profiles
+      #   run: |
+      #     security find-identity -p codesigning -v
+      #     ls ~/Library/MobileDevice/Provisioning\ Profiles
 
       # Step 6: Build and sign the app
       - name: Build and Sign
