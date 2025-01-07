@@ -70,5 +70,6 @@ jobs:
             -configuration Daily \
             -archivePath $PWD/build/OmronLibrarySample.xcarchive \
             DEVELOPMENT_TEAM="${{ secrets.DEVELOPER_TEAM_ID }}"
+            -allowProvisioningUpdates
 
 
