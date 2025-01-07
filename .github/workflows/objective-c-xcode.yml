@@ -49,10 +49,16 @@ jobs:
           security import Certificate.p12 -k build.keychain -P ${{ secrets.P12_PASSWORD }} -A
           
       # Step 5: Install provisioning profile
-      - name: Install provisioning profile
+      # - name: Install provisioning profile
+      #   run: |
+      #     mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+      #     cp Profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
+
+      - name: Install Provisioning Profile
         run: |
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-          cp Profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
+          echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/OmronConnect_Library_sample.mobileprovision
+
 
       #Step 6: Build and sign the app
       - name: Build and Sign
