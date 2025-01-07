@@ -37,6 +37,10 @@ jobs:
           security default-keychain -s build.keychain
           security set-keychain-settings
 
+          security list-keychain
+          security find-identity -p codesigning
+          ls -l Certificate.p12
+
           # Import the .p12 file
           security import Certificate.p12 -k build.keychain -P ${{ secrets.P12_PASSWORD }} -A
           
