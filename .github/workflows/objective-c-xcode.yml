@@ -74,7 +74,6 @@ jobs:
             -configuration Daily \
             -archivePath $PWD/build/OmronLibrarySample.xcarchive \
             CODE_SIGN_IDENTITY="iPhone Distribution" \
-            PROVISIONING_PROFILE_SPECIFIER="OmronConnect Library sample" \
             DEVELOPMENT_TEAM="${{ secrets.DEVELOPER_TEAM_ID }}"
 
 
