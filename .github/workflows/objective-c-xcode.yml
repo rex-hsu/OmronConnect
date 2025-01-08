@@ -1,26 +1,88 @@
-- name: Build and Sign
-  run: |
-    xcodebuild clean archive \
-      -project OmronLibrarySample.xcodeproj \
-      -scheme OmronLibrarySample \
-      -configuration Daily \
-      -archivePath $PWD/build/OmronLibrarySample.xcarchive \
-      DEVELOPMENT_TEAM="${{ secrets.DEVELOPER_TEAM_ID }}" \
-      -allowProvisioningUpdates
+name: Build and Sign iOS App
 
-- name: Export .ipa file
-  run: |
-    xcodebuild -exportArchive \
-      -archivePath $PWD/build/OmronLibrarySample.xcarchive \
-      -exportPath $PWD/build \
-      -exportOptionsPlist ExportOptions.plist
+on:
+  push:
+    branches:
+      - rex/github-action-setup
+  pull_request:
+    branches:
+      - rex/github-action-setup
 
-- name: Verify .ipa file
-  run: |
-    ls -lh $PWD/build
+jobs:
+  build-and-sign:
+    runs-on: macos-latest
+    environment: Daily
 
-- name: Authenticate Apple Account
-  run: |
-    xcrun altool --validate-app -f $PWD/build/OmronLibrarySample.ipa -t ios \
-      -u ${{ secrets.APPLE_ID }} \
-      -p ${{ secrets.APPLE_APP_PASSWORD }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set Xcode version
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app
+
+      - name: Decode signing credentials
+        run: |
+          echo "${{ secrets.SIGNING_CERTIFICATE }}" | base64 --decode > Certificate.p12
+          echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > Profile.mobileprovision
+
+      - name: Authenticate Apple Account
+        run: |
+          xcrun altool --validate-app -f $PWD/build/OmronLibrarySample.ipa -t ios \
+            -u ${{ secrets.APPLE_ID }} \
+            -p ${{ secrets.APPLE_APP_PASSWORD }}
+
+      - name: Install signing certificate
+        run: |
+          security create-keychain -p "" build.keychain
+          security unlock-keychain -p "" build.keychain
+          security list-keychain -s build.keychain
+          security default-keychain -s build.keychain
+          security set-keychain-settings
+          security import Certificate.p12 -k build.keychain -P ${{ secrets.P12_PASSWORD }} -A
+
+      - name: Validate Signing Certificate
+        run: |
+          security find-identity -p codesigning -v
+
+      - name: Install Provisioning Profile
+        run: |
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp Profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/OmronConnect_Library_sample.mobileprovision
+
+      - name: Verify Provisioning Profile
+        run: |
+          ls ~/Library/MobileDevice/Provisioning\ Profiles
+          security find-identity -p codesigning -v
+
+      - name: Debug Xcode Build Settings
+        run: |
+          xcodebuild -showBuildSettings \
+            -project OmronLibrarySample.xcodeproj \
+            -scheme OmronLibrarySample
+
+      - name: Build and Sign
+        run: |
+          xcodebuild clean archive \
+            -project OmronLibrarySample.xcodeproj \
+            -scheme OmronLibrarySample \
+            -configuration Daily \
+            -archivePath $PWD/build/OmronLibrarySample.xcarchive \
+            DEVELOPMENT_TEAM="${{ secrets.DEVELOPER_TEAM_ID }}" \
+            -allowProvisioningUpdates
+      
+      - name: Export .ipa file
+        run: |
+          xcodebuild -exportArchive \
+            -archivePath $PWD/build/OmronLibrarySample.xcarchive \
+            -exportPath $PWD/build \
+            -exportOptionsPlist ExportOptions.plist
+      
+      - name: Verify .ipa file
+        run: |
+          ls -lh $PWD/build
+      
+      - name: Authenticate Apple Account
+        run: |
+          xcrun altool --validate-app -f $PWD/build/OmronLibrarySample.ipa -t ios \
+            -u ${{ secrets.APPLE_ID }} \
+            -p ${{ secrets.APPLE_APP_PASSWORD }}
