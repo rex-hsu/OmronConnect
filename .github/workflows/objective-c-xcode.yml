@@ -26,7 +26,7 @@ jobs:
       - name: Decode signing certificate
         run: |
           echo "${{ secrets.SIGNING_CERTIFICATE }}" | base64 --decode > Certificate.p12
-          echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > Profile.mobileprovision
+          # echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > Profile.mobileprovision
 
       - name: Debug Base64 Content
         run: echo "${{ secrets.SIGNING_CERTIFICATE }}"
