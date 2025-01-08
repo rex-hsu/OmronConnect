@@ -25,12 +25,6 @@ jobs:
           echo "${{ secrets.SIGNING_CERTIFICATE }}" | base64 --decode > Certificate.p12
           echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > Profile.mobileprovision
 
-      - name: Authenticate Apple Account
-        run: |
-          xcrun altool --validate-app -f $PWD/build/OmronLibrarySample.ipa -t ios \
-            -u ${{ secrets.APPLE_ID }} \
-            -p ${{ secrets.APPLE_APP_PASSWORD }}
-
       - name: Install signing certificate
         run: |
           security create-keychain -p "" build.keychain
