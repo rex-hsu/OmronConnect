@@ -14,59 +14,48 @@ jobs:
     environment: Daily
 
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set Xcode version
       - name: Set Xcode version
         run: sudo xcode-select -s /Applications/Xcode_15.4.app
-            
-      # Step 3: Decode signing credentials
-      - name: Decode signing certificate
+
+      - name: Decode signing credentials
         run: |
           echo "${{ secrets.SIGNING_CERTIFICATE }}" | base64 --decode > Certificate.p12
           echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > Profile.mobileprovision
 
-      - name: Debug Base64 Content
-        run: echo "${{ secrets.SIGNING_CERTIFICATE }}"
-
-      # Step 4: Install signing certificate
       - name: Install signing certificate
         run: |
-          # Create and unlock the keychain
           security create-keychain -p "" build.keychain
           security unlock-keychain -p "" build.keychain
           security list-keychain -s build.keychain
           security default-keychain -s build.keychain
           security set-keychain-settings
-
-          # security list-keychain
-          # security find-identity -p codesigning
-          # ls -l Certificate.p12
-
-          # Import the .p12 file
           security import Certificate.p12 -k build.keychain -P ${{ secrets.P12_PASSWORD }} -A
-          
-      # Step 5: Install provisioning profile
-      # - name: Install provisioning profile
-      #   run: |
-      #     mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-      #     cp Profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
+
+      - name: Validate Signing Certificate
+        run: |
+          security find-identity -p codesigning -v
 
       - name: Install Provisioning Profile
         run: |
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp Profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/OmronConnect_Library_sample.mobileprovision
-          
+
       - name: Verify Provisioning Profile
         run: |
           ls ~/Library/MobileDevice/Provisioning\ Profiles
           security find-identity -p codesigning -v
 
+      - name: Debug Xcode Build Settings
+        run: |
+          xcodebuild -showBuildSettings \
+            -project OmronLibrarySample.xcodeproj \
+            -scheme OmronLibrarySample
 
-      #Step 6: Build and sign the app
       - name: Build and Sign
+        timeout-minutes: 10
         run: |
           xcodebuild clean archive \
             -project OmronLibrarySample.xcodeproj \
@@ -75,7 +64,3 @@ jobs:
             -archivePath $PWD/build/OmronLibrarySample.xcarchive \
             DEVELOPMENT_TEAM="${{ secrets.DEVELOPER_TEAM_ID }}" \
             -allowProvisioningUpdates
-
-
-
-
